@@ -21,5 +21,11 @@ namespace WinFormsTest
         {
 
         }
+
+        private void buttonOK_Click(object sender, EventArgs e)
+        {
+            labelMsg1.Text = $"Hello {textBoxName.Text} {textBoxSurname.Text}.";
+            labelMsg2.Text = $"You still have {65-Convert.ToInt32(textBoxAge.Text)} years till retirement.";
+        }
     }
 }
